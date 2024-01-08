@@ -18,6 +18,7 @@ public class ProductController {
     @GetMapping("")
     public Flux<ProductDto> getAllProducts()  {
         System.out.println();
+        System.out.println("Feature branch");
         return this.productService.getAll();
     }
 

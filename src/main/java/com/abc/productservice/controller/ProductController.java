@@ -17,6 +17,7 @@ public class ProductController {
 
     @GetMapping("")
     public Flux<ProductDto> getAllProducts()  {
+        System.out.println();
         return this.productService.getAll();
     }
 
